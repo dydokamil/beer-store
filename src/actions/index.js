@@ -25,3 +25,23 @@ export const fetchBeers = () => dispatch => {
     .then(body => dispatch(fetchBeersSuccess(body.data)))
     .catch(error => dispatch(fetchBeersFailure(error.response.data.error)));
 };
+
+export const changeMinMl = minMl => ({
+  type: types.CHANGE_MIN_ML,
+  payload: { minMl },
+});
+
+export const changeMaxMl = maxMl => ({
+  type: types.CHANGE_MAX_ML,
+  payload: { maxMl },
+});
+
+export const changeMinPrice = minPrice => ({
+  type: types.CHANGE_MIN_PRICE,
+  payload: { minPrice },
+});
+
+export const changeMaxPrice = maxPrice => ({
+  type: types.CHANGE_MAX_PRICE,
+  payload: { maxPrice },
+});

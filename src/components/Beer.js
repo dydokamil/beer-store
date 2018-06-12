@@ -3,9 +3,6 @@ import React from "react";
 import "./Beer.css";
 
 class Beer extends React.Component {
-  componentDidMount() {
-    console.log(this.props);
-  }
   render() {
     const { beer } = this.props;
     return (

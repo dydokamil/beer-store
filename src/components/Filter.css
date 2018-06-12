@@ -1,0 +1,13 @@
+.filter-inputs > input:not(:last-child) {
+  margin-right: 5px;
+}
+
+.filter-inputs > input {
+  padding: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+}
+
+.filter-inputs {
+  margin-top: 2rem;
+}

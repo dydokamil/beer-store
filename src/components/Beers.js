@@ -25,7 +25,7 @@ class Beers extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  beers: state.beersReducer.beers,
+  beers: state.beersReducer.beersFiltered,
 });
 const mapDispatchToProps = dispatch => ({
   onFetchBeers: () => dispatch(actions.fetchBeers()),
